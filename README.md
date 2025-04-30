@@ -47,13 +47,6 @@ for reason in reasons:
 
 ### ✅ Option 2: As a CLI Tool (via entry point)
 
-If your `pyproject.toml` includes this:
-
-```toml
-[project.scripts]
-uavsat = "uavsat.core:main"
-```
-
 You can run from terminal:
 
 ```bash
