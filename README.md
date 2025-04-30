@@ -3,8 +3,10 @@
 
 ## Library Usage
 
-Great — since the import now works, here’s how you can **use your installed `uavsat` package** in two different ways:
+```
+pip install uavsat==0.2.0
 
+```
 ---
 
 ### ✅ Option 1: As a Python Library
