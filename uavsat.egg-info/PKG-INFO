@@ -1,17 +1,14 @@
 Metadata-Version: 2.4
 Name: uavsat
-Version: 0.1.0
-Summary: UAV SAT Path Validator using PySAT
+Version: 0.2.0
+Summary: A Python library for validating UAV flight paths against airspace and environmental constraints using SAT solving.
 Author: Your Name
-Author-email: justin.williams1@students.cau.edu
+Author-email: Justin <justin.williams1@students.cau.edu>
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Requires-Dist: python-sat[aiger,pblib]
 Dynamic: author
-Dynamic: author-email
 Dynamic: classifier
-Dynamic: requires-dist
 Dynamic: requires-python
-Dynamic: summary

@@ -1,4 +1,24 @@
+# pyproject.toml
+
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=42", "wheel", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "uavsat"
+version = "0.2.0"
+description = "A Python library for validating UAV flight paths against airspace and environmental constraints using SAT solving."
+authors = [
+    { name = "Justin", email = "justin.williams1@students.cau.edu" }
+]
+dependencies = [
+    "python-sat[pblib,aiger]"
+]
+dynamic = ["classifiers", "requires-python"]
+
+[tool.setuptools]
+packages = ["uavsat"]
+
+[project.scripts]
+uavsat = "uavsat.core:main"
 

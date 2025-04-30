@@ -1,6 +1,10 @@
+.gitignore
 README.md
 pyproject.toml
+requirements.txt
 setup.py
+uavsat/__init__.py
+uavsat/core.py
 uavsat.egg-info/PKG-INFO
 uavsat.egg-info/SOURCES.txt
 uavsat.egg-info/dependency_links.txt

@@ -1,5 +1,85 @@
 # UAVproj
-### ✅ `README.md`
+
+
+## Library Usage
+
+Great — since the import now works, here’s how you can **use your installed `uavsat` package** in two different ways:
+
+---
+
+### ✅ Option 1: As a Python Library
+
+You can import and use it directly:
+
+```python
+from uavsat import UAVSATValidator
+
+validator = UAVSATValidator()
+
+result, reasons = validator.validate(
+    path=[(0, 0), (1, 1), (2, 2), (3, 3)],
+    altitudes=[100, 110, 115, 105],
+    max_altitude=120,
+    no_fly_zones={
+        'airports': [(2, 2)],
+        'military': [],
+        'infrastructure': []
+    },
+    weather_flags={
+        'rain': False,
+        'fog': False,
+        'wind': False,
+        'daylight': True
+    },
+    vlos_required=True,
+    bvlos_allowed=False,
+    drone_size='small',
+    controlled_airspace=False
+)
+
+print("SAT Query: Is this path valid?")
+print("Output:", result)
+for reason in reasons:
+    print("Reason:", reason)
+```
+
+---
+
+### ✅ Option 2: As a CLI Tool (via entry point)
+
+If your `pyproject.toml` includes this:
+
+```toml
+[project.scripts]
+uavsat = "uavsat.core:main"
+```
+
+You can run from terminal:
+
+```bash
+uavsat \
+  --path "[(0,0),(1,1),(2,2),(3,3)]" \
+  --altitudes "[100,110,115,105]" \
+  --max_altitude 120 \
+  --no_fly_airports "[(2,2)]" \
+  --vlos_required
+```
+
+You can also try:
+
+```bash
+uavsat --help
+```
+
+to view all the available arguments.
+
+---
+
+Would you like to add more examples to the README or include a usage notebook?
+
+
+
+## Development
 
 ```markdown
 # UAV SAT Path Validator
