@@ -30,7 +30,7 @@ Built using the `python-sat` library (with Glucose3 solver), this tool helps val
 Run the script with CLI arguments:
 
 ```bash
-python3 test.py \
+python3 uav_validator.py \
   --path "[(0,0), (1,1), (2,2), (2,3), (3,3)]" \
   --altitudes "[100, 110, 115, 105, 100]" \
   --max_altitude 120 \
@@ -94,7 +94,7 @@ pip install python-sat[pblib,aiger]
 
 ```
 .
-├── test.py            # Main script (contains UAVSATValidator class + CLI)
+├── uav_validator.py            # Main script (contains UAVSATValidator class + CLI)
 ├── README.md          # This file
 ```
 
