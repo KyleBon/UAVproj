@@ -149,7 +149,7 @@ class UAVSATValidator:
         return result, violations if result == 'UNSAT' else []
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="UAV SAT Path Validator")
 
     parser.add_argument("--path", type=str, required=True, help="List of (x,y) tuples. Example: '[(0,0), (1,1), (2,2)]'")
@@ -216,3 +216,4 @@ if __name__ == "__main__":
     
     '''
 
+__all__ = ['UAVSATValidator']

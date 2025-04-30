@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+uavsat.egg-info/PKG-INFO
+uavsat.egg-info/SOURCES.txt
+uavsat.egg-info/dependency_links.txt
+uavsat.egg-info/entry_points.txt
+uavsat.egg-info/requires.txt
+uavsat.egg-info/top_level.txt
